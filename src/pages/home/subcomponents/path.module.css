@@ -1,0 +1,30 @@
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #38618c;
+
+    margin-bottom: 1.3rem;
+}
+
+.moves_container {
+    max-height: 20rem;
+    min-width: 20rem;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    text-align: center;
+}
+
+.moves_container hr {
+    width: 75%;
+}
+
+.total {
+    padding-top: 20rem;
+    font-weight: 600;
+    color: #38618c;
+}

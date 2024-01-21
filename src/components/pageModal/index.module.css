@@ -1,0 +1,50 @@
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgb(0, 0, 0, 0.6);
+}
+
+.container {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 70%;
+
+    padding: 1.5rem 2rem;
+
+    background: white;
+    border-radius: 12px;
+
+    animation: fall 0.8s both ease-out;
+}
+
+.message {
+    position: fixed;
+    bottom: 1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    font-weight: 600;
+    color: white;
+
+    animation: fade 1s infinite alternate backwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fall {
+    from {top: 0;}
+    to {top: 45%;}
+}

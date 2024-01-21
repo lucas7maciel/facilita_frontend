@@ -1,0 +1,35 @@
+.table {
+  height: 70%;
+
+  /*overflow-y: scroll;*/
+  scrollbar-width: thin;
+  background: white;
+
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px #32567c;
+}
+
+.table tr {
+  display: flex;
+}
+
+tr > * {
+  flex: 1;
+}
+
+th {
+  color: white;
+  font-weight: bold;
+  background-color: /*#162030*/ #38618c;
+}
+
+td {
+  color: #38618c;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 0.3rem 0;
+  border: solid #8f94a2 0.4px;
+}

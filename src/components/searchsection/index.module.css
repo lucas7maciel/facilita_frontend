@@ -1,0 +1,55 @@
+
+@import url('https://fonts.cdnfonts.com/css/monarda');
+
+.container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.container > * {
+    flex: 1;
+}
+
+.search_section {
+    display: flex;
+    align-items: center;
+}
+
+.search_section input {
+    font-size: 0.9rem;
+
+    /*total 1.9*/
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    margin: 0 0.7rem 0 0;
+
+    background-position: 0.6rem 0.45rem;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+
+    border: solid black 1.8px;
+    border-radius: 1rem;
+}
+
+.search_section img {
+    max-height: 2.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+    color: #38618c;
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-style: italic;
+    
+    user-select: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
