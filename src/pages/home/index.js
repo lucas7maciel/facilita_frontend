@@ -30,12 +30,17 @@ export const Home = () => {
         />
 
         <div className={styles.options}>
-          <button className={styles.sheet} onClick={() => alert("Esta função ainda está sendo desenvolvida")}>GERAR PLANILHA</button>
           <button
             className={styles.local}
             onClick={() => setModal({ visible: true, page: <Path /> })}
           >
             LOCALIZAÇÃO
+          </button>
+          <button
+            className={styles.sheet}
+            onClick={() => alert("Esta função ainda está sendo desenvolvida")}
+          >
+            PLANILHA
           </button>
         </div>
       </div>

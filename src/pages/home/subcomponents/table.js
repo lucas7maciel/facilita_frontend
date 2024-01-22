@@ -3,15 +3,19 @@ import { Options } from "./options";
 import styles from "./table.module.css";
 
 export const Table = (props) => {
-  const [customers, setCustomers] = useState([{name: "Carregando...", phone: "Carregando...", email: "Carregando..."}]);
+  const [customers, setCustomers] = useState([
+    { name: "Carregando...", phone: "Carregando...", email: "Carregando..." },
+  ]);
 
   function fetchData() {
     fetch(`${process.env.REACT_APP_SERVER}/customers/${props.search}`)
       .then((res) => res.json())
       .then(setCustomers)
       .catch((error) => {
-        console.error(error)
-        setCustomers([{name: "Erro", email: "Cheque o console", phone: "Erro"}])
+        console.error(error);
+        setCustomers([
+          { name: "Erro", email: "Cheque o console", phone: "Erro" },
+        ]);
       });
   }
 
@@ -21,7 +25,7 @@ export const Table = (props) => {
 
   return (
     <tbody className={styles.table}>
-      <tr style={{borderTopRightRadius: 15, borderTopLeftRadius: 15}}>
+      <tr style={{ borderTopRightRadius: 15, borderTopLeftRadius: 15 }}>
         <th style={{ borderTopLeftRadius: 15, flex: 0.25 }}>+</th>
         <th>NOME</th>
         <th>EMAIL</th>

@@ -31,8 +31,10 @@
   transform: translateX(-50%);
   text-align: center;
 
-  font-weight: 600;
   color: white;
+  font-weight: 600;
+
+  user-select: none;
 
   animation: fade 1s infinite alternate backwards;
   animation-delay: 0.8s;
