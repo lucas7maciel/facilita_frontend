@@ -1,9 +1,9 @@
 
 # React App que permite o gerenciamento dos clientes e consulta de dados da empresa!
 _API em:_ https://github.com/lucas7maciel/facilita_api
+_Site hosteado em:_ https://facilita-flax.vercel.app/
 
-
-Neste projeto, é possível:
+## Neste projeto, é possível:
 - Consultar todos os clientes em uma tabela;
 - Consultar clientes filtrados pela barra de pesquisa;
 - Adicionar novos clientes;

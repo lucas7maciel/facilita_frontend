@@ -1,9 +1,9 @@
 
-export const checkFields = (name, email, phone) => {
+export const checkFields = (name, email, phone, x, y) => {
   let success = false;
   let message = "Pode passar";
 
-  if (!name || !email || !phone) {
+  if (!name || !email || !phone || !x || !y) {
     message = "Campo vazio";
   } else if (name.length > 40) {
     message = "Nome não pode ter mais de 40 caracteres";

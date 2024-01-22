@@ -52,4 +52,12 @@
     .container {
         flex-direction: column-reverse;
     }
+
+    .search_section input {
+
+    }
+
+    .search_section img {
+        
+    }
 }

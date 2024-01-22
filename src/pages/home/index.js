@@ -7,7 +7,6 @@ import styles from "./index.module.css";
 import { Path } from "./subcomponents/path";
 
 export const Home = () => {
-  console.log(process.env.REACT_APP_SERVER)
   const [search, setSearch] = useState("");
   const [modal, setModal] = useState({ visible: false, page: null });
 

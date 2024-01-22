@@ -26,6 +26,24 @@
     font-size: 1.2rem;
 }
 
+.form_container .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container .location div {
+    flex: 1;
+}
+
+.form_container .location label {
+    padding: 0 1.5rem;
+}
+
+.form_container .location input {
+    max-width: 3rem;
+}
+
 .message {
     margin: 1.2rem 0 0.7rem 0;
     font-weight: bold;
