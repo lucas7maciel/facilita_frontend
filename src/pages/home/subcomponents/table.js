@@ -3,13 +3,16 @@ import { Options } from "./options";
 import styles from "./table.module.css";
 
 export const Table = (props) => {
-  const [customers, setCustomers] = useState([]);
+  const [customers, setCustomers] = useState([{name: "Carregando...", phone: "Carregando...", email: "Carregando..."}]);
 
   function fetchData() {
     fetch(`${process.env.REACT_APP_SERVER}/customers/${props.search}`)
       .then((res) => res.json())
       .then(setCustomers)
-      .catch(console.log);
+      .catch((error) => {
+        console.error(error)
+        setCustomers([{name: "Erro", email: "Cheque o console", phone: "Erro"}])
+      });
   }
 
   useEffect(() => {

@@ -12,3 +12,9 @@
 .container img:hover {
   fill: lightblue;
 }
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}

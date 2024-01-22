@@ -28,6 +28,8 @@ th {
 td {
   color: #38618c;
   font-weight: 600;
+  word-wrap: break-word;
+  max-width: 33%;
 }
 
 th,

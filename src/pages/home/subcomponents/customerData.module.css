@@ -31,7 +31,7 @@
   justify-content: center;
 }
 
-.form_container .location div {
+.form_container .location > * {
   flex: 1;
 }
 

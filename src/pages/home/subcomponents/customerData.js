@@ -66,22 +66,18 @@ export const CustomerData = (props) => {
         <br />
 
         <div className={styles.location}>
-          <div>
             <label>X</label>
             <input
               ref={x}
               type="number"
               defaultValue={props.edit?.x_location}
             />
-          </div>
-          <div>
             <label>Y</label>
             <input
               ref={y}
               type="number"
               defaultValue={props.edit?.y_location}
             />
-          </div>
         </div>
       </div>
 
