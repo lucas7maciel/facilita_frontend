@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Options } from "./options";
 import styles from "./table.module.css";
+import {useDowloadExcel} from "react-export-table-to-excel"
 
 export const Table = (props) => {
   const [customers, setCustomers] = useState([
@@ -24,28 +25,32 @@ export const Table = (props) => {
   }, [props.search, props.visible]);
 
   return (
-    <tbody className={styles.table}>
-      <tr style={{ borderTopRightRadius: 15, borderTopLeftRadius: 15 }}>
-        <th style={{ borderTopLeftRadius: 15, flex: 0.25 }}>+</th>
-        <th>NOME</th>
-        <th>EMAIL</th>
-        <th style={{ borderTopRightRadius: 15 }}>TELEFONE</th>
-      </tr>
-
-      {customers.map((customer, index) => (
-        <tr key={index}>
-          <td style={{ flex: 0.25 }}>
-            <Options
-              id={customer.id}
-              refresh={fetchData}
-              edit={() => props.setModal(customer)}
-            />
-          </td>
-          <td>{customer.name}</td>
-          <td>{customer.email}</td>
-          <td>{customer.phone}</td>
+    <table className={styles.table}>
+      <thead>
+        <tr style={{ borderTopRightRadius: 15, borderTopLeftRadius: 15 }}>
+          <th style={{ borderTopLeftRadius: 15, flex: 0.25 }}>+</th>
+          <th>NOME</th>
+          <th>EMAIL</th>
+          <th style={{ borderTopRightRadius: 15 }}>TELEFONE</th>
         </tr>
-      ))}
-    </tbody>
+      </thead>
+
+      <tbody>
+        {customers.map((customer, index) => (
+          <tr key={index}>
+            <td>
+              <Options
+                id={customer.id}
+                refresh={fetchData}
+                edit={() => props.setModal(customer)}
+              />
+            </td>
+            <td>{customer.name}</td>
+            <td>{customer.email}</td>
+            <td>{customer.phone}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };
