@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./path.module.css";
 
 const Movement = (props) => (
-  <div>
-    <hr />
+  <>
     <span style={{ fontWeight: "bold" }}>{props.step}º passo</span>
     <br />
     <span>Para a casa de Id: {props.move.id}</span>
@@ -12,7 +11,8 @@ const Movement = (props) => (
       Distância: {props.move.distance.toFixed(2)} ({props.move.x_location},{" "}
       {props.move.y_location})
     </span>
-  </div>
+    {!props.last ? <hr /> : null}
+  </>
 );
 
 export const Path = () => {
@@ -37,7 +37,7 @@ export const Path = () => {
       <div className={styles.moves_container}>
         {data.path
           ? data.path.map((move, index) => (
-              <Movement key={index} step={index + 1} move={move} />
+              <Movement key={index} step={index + 1} move={move} last={data.path.length - 1 == index} />
             ))
           : null}
       </div>

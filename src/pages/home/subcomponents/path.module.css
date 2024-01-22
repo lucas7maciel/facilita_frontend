@@ -11,12 +11,20 @@
 }
 
 .moves_container {
-  max-height: 20rem;
+  max-height: 18rem;
   min-width: 15rem;
   max-width: 25rem;
+
+  margin: 1rem 0 1.2rem 0;
+  padding: 1.2rem 0;
+
+  text-align: center;
+
+  border: solid #38618c 2px;
+  border-radius: 4px;
+
   overflow-y: scroll;
   scrollbar-width: thin;
-  text-align: center;
 }
 
 .moves_container hr {
@@ -24,7 +32,6 @@
 }
 
 .total {
-  padding-top: 20rem;
   font-weight: 600;
   color: #38618c;
 }
