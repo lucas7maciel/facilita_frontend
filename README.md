@@ -15,7 +15,7 @@ _Site hosteado em:_ https://facilita-flax.vercel.app/
 
 ## DEPENDÊNCIAS
 - Node (v17.0.0 <=);
-- React Router Dom (Biblioteca);
+- React Router Dom, XLSX (Bibliotecas);
 
 A aplicação está configurada para o uso do Docker (Dockerfile).
 
