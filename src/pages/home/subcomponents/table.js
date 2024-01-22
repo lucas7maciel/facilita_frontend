@@ -46,7 +46,11 @@ export const Table = (props) => {
             </td>
             <td>{customer.name}</td>
             <td>{customer.email}</td>
-            <td>+{customer.phone.slice(0, 2)} {customer.phone.slice(2)}</td>
+            <td>
+              {customer.phone != "Carregando..."
+                ? `+${customer.phone.slice(0, 2)} ${customer.phone.slice(2)}`
+                : customer.phone}
+            </td>
           </tr>
         ))}
       </tbody>
