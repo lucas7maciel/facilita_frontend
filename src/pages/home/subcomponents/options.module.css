@@ -1,14 +1,14 @@
-
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container img {
-    max-height: 1rem; padding: 0 0.3rem;
-    cursor: pointer;
+  max-height: 1rem;
+  padding: 0 0.3rem;
+  cursor: pointer;
 }
 
 .container img:hover {
-    fill: lightblue;
+  fill: lightblue;
 }

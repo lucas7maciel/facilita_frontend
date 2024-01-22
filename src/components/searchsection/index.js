@@ -13,7 +13,7 @@ export const SearchSection = (props) => {
         <img src="./icons/add.svg" alt="Add Customer" onClick={props.addUser} />
       </div>
       <div className={styles.logo}>
-        <span>FACILITA</span>
+        <span>LIMPEZAS</span>
       </div>
     </div>
   );

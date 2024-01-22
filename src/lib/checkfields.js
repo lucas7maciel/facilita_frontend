@@ -1,7 +1,6 @@
-
 export const checkFields = (name, email, phone, x, y) => {
   let success = false;
-  let message = "Pode passar";
+  let message = "Enviando dados...";
 
   if (!name || !email || !phone || !x || !y) {
     message = "Campo vazio";

@@ -16,7 +16,9 @@ export const Home = () => {
         <SearchSection
           setSearch={setSearch}
           search={search}
-          addUser={() => setModal({ visible: true, page: <CustomerData edit={null} /> })}
+          addUser={() =>
+            setModal({ visible: true, page: <CustomerData edit={null} /> })
+          }
         />
 
         <Table
@@ -28,7 +30,7 @@ export const Home = () => {
         />
 
         <div className={styles.options}>
-          <button className={styles.sheet}>GERAR PLANILHA</button>
+          <button className={styles.sheet} onClick={() => alert("Esta função ainda está sendo desenvolvida")}>GERAR PLANILHA</button>
           <button
             className={styles.local}
             onClick={() => setModal({ visible: true, page: <Path /> })}

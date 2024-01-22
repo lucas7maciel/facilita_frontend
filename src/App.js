@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    document.title = "Facilita Site"
+    document.title = "Limpezas"
   })
 
   return (
