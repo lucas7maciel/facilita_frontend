@@ -14,8 +14,8 @@ _Site hosteado em:_ https://facilita-flax.vercel.app/
 - Gerar uma planilha com todos os clientes;
 
 ## DEPENDÊNCIAS
-- Node;
-- React Router Dom;
+- Node (v17.0.0 <=);
+- React Router Dom (Biblioteca);
 
 A aplicação está configurada para o uso do Docker (Dockerfile).
 
