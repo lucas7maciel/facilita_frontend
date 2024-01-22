@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Options } from "./options";
 import styles from "./table.module.css";
-import {useDowloadExcel} from "react-export-table-to-excel"
 
 export const Table = (props) => {
   const [customers, setCustomers] = useState([
@@ -47,7 +46,7 @@ export const Table = (props) => {
             </td>
             <td>{customer.name}</td>
             <td>{customer.email}</td>
-            <td>{customer.phone}</td>
+            <td>+{customer.phone.slice(0, 2)} {customer.phone.slice(2)}</td>
           </tr>
         ))}
       </tbody>
