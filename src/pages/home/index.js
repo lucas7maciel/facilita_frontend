@@ -5,6 +5,7 @@ import { CustomerData } from "./subcomponents/customerData";
 import { Table } from "./subcomponents/table";
 import styles from "./index.module.css";
 import { Path } from "./subcomponents/path";
+import { exportSheet } from "../../lib/exportSheet";
 
 export const Home = () => {
   const [search, setSearch] = useState("");
@@ -38,7 +39,7 @@ export const Home = () => {
           </button>
           <button
             className={styles.sheet}
-            onClick={() => alert("Esta função ainda está sendo desenvolvida")}
+            onClick={() => exportSheet()}
           >
             PLANILHA
           </button>
