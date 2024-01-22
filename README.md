@@ -1,6 +1,7 @@
 
 # React App que permite o gerenciamento dos clientes e consulta de dados da empresa!
 _API em:_ https://github.com/lucas7maciel/facilita_api
+
 _Site hosteado em:_ https://facilita-flax.vercel.app/
 
 ## Neste projeto, é possível:
@@ -21,7 +22,7 @@ A aplicação está configurada para o uso do Docker (Dockerfile).
 ## COMO EXECUTAR
 Crie uma pasta para salvar o servidor e a interface;
 
-Descompacte este repositório e o repositório do frontend (https://github.com/lucas7maciel/facilita_frontend) nesta pasta e nomeie como preferir, (vou me referir como api e frontend);
+Descompacte este repositório e o repositório da api (https://github.com/lucas7maciel/facilita_api) nesta pasta e nomeie como preferir, (vou me referir como api_pasta e frontend_pasta);
 
 Abra um terminal na pasta criada, acesse o diretório da api e instale as dependências;
 ```
