@@ -43,6 +43,60 @@ td {
   outline: solid #8f94a2 0.4px;
 }
 
+/*loading*/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90%;
+}
+
+.loading img {
+  max-width: 5rem;
+  max-height: 5rem;
+
+  animation: spin 1.5s ease-out infinite;
+}
+
+@keyframes spin {
+  from { rotate: 0deg;}
+  to {rotate: 360deg;}
+}
+
+/*error*/
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+
+  height: 90%;
+
+  text-align: center;
+}
+
+.error img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
+.error p {
+  color: red;
+  font-weight: bold;
+}
+
+.error p:nth-child(3) {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .table {
+    height: 67%;
+  }
+}
+
 @media (max-width: 420px) {
   th, td {
     font-size: 0.8rem;

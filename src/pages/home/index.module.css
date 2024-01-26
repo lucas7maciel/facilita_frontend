@@ -41,6 +41,14 @@
   background-color: #f0d946;
 }
 
+.options .sheet {
+  padding-left: 2.5rem;
+
+  background-position: 1.2rem 0.4rem;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 600px) {
   .container > * {
     min-width: 85%;

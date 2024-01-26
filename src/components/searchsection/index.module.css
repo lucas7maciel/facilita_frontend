@@ -39,12 +39,20 @@
   align-items: center;
   justify-content: end;
 
-  color: #38618c;
+  user-select: none;
+}
+
+.logo span {
   font-size: 1.9rem;
   font-weight: bolder;
-  font-family: 'nunito';
+  font-style: italic;
 
-  user-select: none;
+  padding: 0 0.5rem;
+
+  color: white;
+  background: #38618c;
+
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 600px) {
@@ -52,9 +60,7 @@
     flex-direction: column-reverse;
   }
 
-  .search_section input {
-  }
-
-  .search_section img {
+  .logo {
+    margin-bottom: 0.2rem;
   }
 }

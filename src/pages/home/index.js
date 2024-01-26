@@ -39,6 +39,7 @@ export const Home = () => {
           </button>
           <button
             className={styles.sheet}
+            style={{backgroundImage: "url(/icons/download.svg)"}}
             onClick={() => exportSheet()}
           >
             PLANILHA
