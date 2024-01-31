@@ -9,7 +9,13 @@ export const Table = (props) => {
     fetch(`${process.env.REACT_APP_SERVER}/customers/${props.search}`)
       .then((res) => res.json())
       .then((res) => {
-        setContent(<TableData customers={res} refresh={fetchData} />);
+        setContent(
+          <TableData
+            customers={res}
+            setModal={props.setModal}
+            refresh={fetchData}
+          />
+        );
       })
       .catch((error) => {
         setContent(<Error message={error} />);
